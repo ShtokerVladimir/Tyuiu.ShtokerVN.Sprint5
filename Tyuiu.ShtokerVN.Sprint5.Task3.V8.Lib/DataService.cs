@@ -14,10 +14,10 @@ namespace Tyuiu.ShtokerVN.Sprint5.Task3.V8.Lib
         {
             string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask3.bin";
 
-            double z = Math.Round((Math.Pow(x, 2) + 1) / (3 * x + 4), 3);
+            double y = Math.Round((Math.Pow(x, 2) + 1) / (3 * x + 4), 3);
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
-                writer.Write(BitConverter.GetBytes(z));
+                writer.Write(BitConverter.GetBytes(y));
             }
             return path;
         }
