@@ -23,27 +23,27 @@ namespace Tyuiu.ShtokerVN.Sprint5.Task1.V4.Lib
             }
 
             double y;
-            string str;
+            string str1;
 
             for (int x = startValue; x <= stopValue; x++)
             {
                 if (x != 0)
                 {
                     y = Math.Round((Math.Cos(x) / x + 1) - Math.Cos(x) * 1.3 + 3 * x, 2);
-                    str = Convert.ToString(y);
+                    str1 = Convert.ToString(y);
                 }
                 else
                 {
-                    str = "0";
+                    str1 = "0";
                 }
 
                 if (x != stopValue)
                 {
-                    File.AppendAllText(path, str + Environment.NewLine);
+                    File.AppendAllText(path, str1 + Environment.NewLine);
                 }
                 else
                 {
-                    File.AppendAllText(path, str);
+                    File.AppendAllText(path, str1);
                 }
             }
             return path;

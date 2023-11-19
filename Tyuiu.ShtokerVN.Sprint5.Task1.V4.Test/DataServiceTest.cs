@@ -9,7 +9,7 @@ namespace Tyuiu.ShtokerVN.Sprint5.Task1.V4.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidSaveToFileTextData()
+        public void ValidSaveTOFileTextData()
         {
             string path = @"C:\Users\geroin\source\repos\Tyuiu.ShtokerVN.Sprint5\Tyuiu.ShtokerVN.Sprint5.Task1.V4\bin\Debug\OutPutFileTask1.txt";
 
