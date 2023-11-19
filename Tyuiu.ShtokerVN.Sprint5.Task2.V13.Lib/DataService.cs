@@ -36,7 +36,7 @@ namespace Tyuiu.ShtokerVN.Sprint5.Task2.V13.Lib
                 }
             }
 
-            string str = "";
+            string str1 = "";
 
             for (int i = 0; i < rows; i++)
             {
@@ -44,24 +44,24 @@ namespace Tyuiu.ShtokerVN.Sprint5.Task2.V13.Lib
                 {
                     if (j != columns - 1)
                     {
-                        str = str + matrix[i, j] + ";";
+                        str1 = str1 + matrix[i, j] + ";";
                     }
                     else
                     {
-                        str = str + matrix[i, j];
+                        str1 = str1 + matrix[i, j];
                     }
                 }
                 
                 if (i != rows - 1)
                 {
-                    File.AppendAllText(path, str + Environment.NewLine);
+                    File.AppendAllText(path, str1 + Environment.NewLine);
                 }
                 else
                 {
-                    File.AppendAllText(path, str);
+                    File.AppendAllText(path, str1);
                 }
 
-                str = "";
+                str1 = "";
             }
             return path;
         }
