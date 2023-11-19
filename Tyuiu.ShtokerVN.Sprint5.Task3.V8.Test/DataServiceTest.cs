@@ -9,7 +9,7 @@ namespace Tyuiu.ShtokerVN.Sprint5.Task3.V8.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void CHeckedExistsFile()
+        public void CheckedExistsFile()
         {
             string path = @"C:\Users\geroin\source\repos\Tyuiu.ShtokerVN.Sprint5\Tyuiu.ShtokerVN.Sprint5.Task3.V8\bin\Debug\OutPutFileTask3.bin";
 
